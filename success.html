@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Choisis une date</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Choisis une date pour notre rendez-vous gallant</h1>
+
+    <div class="calendar">
+      <div class="calendar-header">
+        <button id="prev-month">&lt;</button>
+        <span id="month-label"></span>
+        <button id="next-month">&gt;</button>
+      </div>
+      <div class="calendar-grid" id="calendar-grid"></div>
+    </div>
+
+    <p id="selected-date"></p>
+    <button id="confirm-btn" disabled>Confirmer</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

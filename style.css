@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f0e6;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  background: #ffffff;
+  padding: 50px 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8e0d0;
+}
+
+.container h1 {
+  color: #3a3a3a;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.buttons {
+  position: relative;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 14px 0;
+  width: 140px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#yes-btn {
+  background: #6b9b7a;
+  color: white;
+  box-shadow: 0 4px 12px rgba(107, 155, 122, 0.3);
+}
+
+#yes-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(107, 155, 122, 0.4);
+}
+
+#no-btn {
+  background: #c17a6b;
+  color: white;
+  box-shadow: 0 4px 12px rgba(193, 122, 107, 0.3);
+}
+
+/* Calendrier */
+.calendar {
+  width: 320px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.calendar-header button {
+  background: none;
+  padding: 4px 10px;
+  font-size: 18px;
+  width: auto;
+}
+
+.calendar-header button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.day-cell {
+  background: #f0f0f0;
+  padding: 8px 0;
+  font-size: 14px;
+  width: auto;
+  box-sizing: border-box;
+}
+
+.day-cell:hover {
+  background: #dcdcdc;
+}
+
+.day-cell.selected {
+  background: #6b9b7a;
+  color: white;
+}
+
+#confirm-btn {
+  margin-top: 16px;
+  background: #6b9b7a;
+  color: white;
+}
+
+#confirm-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
