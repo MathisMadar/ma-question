@@ -96,7 +96,7 @@ if (grid) {
   });
 
   confirmBtn.addEventListener("click", () => {
-    alert(`Rendez-vous confirmé ! On se voit le ${selectedDate.toLocaleDateString("fr-FR")} ;)`);
+    alert(`Rendez-vous confirmé ! Notre date sera le ${selectedDate.toLocaleDateString("fr-FR")} ;)`);
   });
 
   renderCalendar();
